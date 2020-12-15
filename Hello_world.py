@@ -1,6 +1,5 @@
 # ask user for their name
 name = input("what is your name?: ")
-print (type(name)) 
 
 # ask user for the age
 age = input("what is your age?: ")
