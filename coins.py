@@ -1,5 +1,6 @@
 import random
 
+
 class Pound:
 
     def __init__(self, rare=False):  # constructor (coin1)
@@ -9,7 +10,7 @@ class Pound:
         if self.rare:
             self.value = 1.25
         else:
-                self.value = 1.00
+            self.value = 1.00
 
         self.value = 1.00
         self.color = "gold"
@@ -17,7 +18,10 @@ class Pound:
         self.diameter = 22.5  # mm
         self.thickness = 3.15  # mm
         self.heads = True
-        
+
+    def __del__(self):
+        print("Coin Spent")
+
     def rust(self):
         self.color = "greenish"
 
@@ -28,4 +32,3 @@ class Pound:
         heads_options = [True, False]
         choice = random.choice(heads_options)
         self.heads = choice
-    
